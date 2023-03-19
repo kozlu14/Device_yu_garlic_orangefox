@@ -50,15 +50,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 	export FOX_DELETE_AROMAFM=1
 	export FOX_ENABLE_APP_MANAGER=1
-
-	# Screen Settings
-	export ALLOW_DISABLE_NAVBAR=0
-	export OF_SCREEN_H=2246
-	export OF_STATUS_H=91
-	export OF_STATUS_INDENT_LEFT=48
-	export OF_STATUS_INDENT_RIGHT=48
-	export OF_CLOCK_POS=2
-	export OF_HIDE_NOTCH=1
     
 	# R11.1
 	export FOX_BUILD_TYPE="Unofficial"
