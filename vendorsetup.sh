@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FDEVICE="beryllium"
+FDEVICE="garlic"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
