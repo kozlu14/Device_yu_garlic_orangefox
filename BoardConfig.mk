@@ -50,8 +50,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_USES_MKE2FS := true
 BOARD_USES_METADATA_PARTITION := true
 
-# Encryption
+# Crypto
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
+
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
