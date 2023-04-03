@@ -51,7 +51,7 @@ TARGET_USES_MKE2FS := true
 BOARD_USES_METADATA_PARTITION := true
 
 # Crypto
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH := device/yu/garlic/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
 
 
