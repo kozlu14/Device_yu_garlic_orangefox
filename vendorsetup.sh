@@ -35,20 +35,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Basic Vars
 	export ALLOW_MISSING_DEPENDENCIES=true
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+	export FOX_BUILD_DEVICE=garlic
 	export LC_ALL="C"
 
 	export OF_USE_TWRP_SAR_DETECT=1
-	export OF_PATCH_AVB20=1
-	export OF_USE_MAGISKBOOT=1
-	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
-	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
-	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
-	export OF_NO_MIUI_PATCH_WARNING=1
-	export FOX_REPLACE_BUSYBOX_PS=1
-	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
-	export OF_USE_NEW_MAGISKBOOT=1
-	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
-	export FOX_DELETE_AROMAFM=1
 	export FOX_ENABLE_APP_MANAGER=1
     
 	# R11.1
@@ -65,13 +55,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_XZ_UTILS=1
 	export OF_USE_GREEN_LED=1
 
-	# OTA for custom ROMs
-	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
-	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=0
-
 	# quick backup defaults
-	export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
+	export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;/system;/vendor;"
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
